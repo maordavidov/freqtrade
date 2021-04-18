@@ -2,6 +2,7 @@
 version: '3'
 services:
   ft_vscode:
+    image: 'freqtrade:dev'
     build:
       context: ..
       dockerfile: ".devcontainer/Dockerfile"
