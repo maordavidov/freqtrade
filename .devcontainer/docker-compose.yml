@@ -11,6 +11,7 @@ services:
       - "${HOME}/.ssh:/home/ftuser/.ssh:ro"
       - "${HOME}/.gitconfig:/home/ftuser/.gitconfig:ro"
       - ..:/freqtrade:cached
+      - "${HOME}/alfredtrading/user_data:/freqtrade/user_data/"
       # Persist bash-history
       - freqtrade-vscode-server:/home/ftuser/.vscode-server
       - freqtrade-bashhistory:/home/ftuser/commandhistory
